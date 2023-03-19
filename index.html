@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="navTop">
+            <div class="navLft">
+                <div id="search">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search Music">
+                </div>
+            </div>
+            <div class="navrgt">
+                <div class="crclBorder">
+                    <i class="ri-mail-fill"></i>
+                </div>
+                <div class="crclBorder">
+                <i class="ri-notification-3-fill"></i>
+                </div>
+                <button>Login/Signup</button>
+            </div>
+        </div>
+        <div id="navLeft">
+            <div class="logo">
+                <i class="ri-netease-cloud-music-fill"></i>
+            </div>
+            <div class="icons">
+                <div class="recBorder">
+                <i class="ri-home-3-fill"></i>
+                </div>                
+                <div class="recBorder">
+                    <i class="ri-music-2-fill"></i>
+                </div>                
+                <div class="recBorder">
+                    <i class="ri-play-list-line"></i>
+                </div>                
+                <div class="recBorder">
+                    <i class="ri-heart-line"></i>
+                </div> 
+                <div class="recBorder">
+                    <i class="ri-bar-chart-fill"></i>
+                </div> 
+                <div class="recBorder">
+                    <i class="ri-settings-5-fill"></i>
+                </div>                
+            </div>
+        </div>
+        <div id="container">
+            <div id="recentlyPlayed">
+                <h1>Recently Played</h1>
+                <div class="scroll">
+                    <div id="recPlayed" class="cardsContainer">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="charts">
+                <h1>Charts</h1>
+                <div class="scroll">
+                    <div id="chartsRec" class="cardsContainer">
+                    </div>
+                </div>
+            </div>
+            <div id="rec4u">
+                <h1>Recommended For You</h1>
+                <div class="scroll">
+                    <div id="recommended4u" class="cardsContainer">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <span>&copy; Frontend Project <br> Prafull Singh <br> Prachi Dubey</span>
+            </div>
+        </div>
+        <div id="player">
+            <div id="playerlft">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/DJSnakeLetMeLoveYou.jpg" id="cover" alt="">
+                <div class="songDetails">
+                    <h5>Let Me Love You</h5>
+                    <span>DJ Snake - Let Me Love You ft. Justin Bieber</span>
+                </div>
+                <i class="ri-heart-line"></i>
+                <i class="ri-play-list-add-line"></i>
+            </div>
+            <div id="playercntr">
+                <div id="play">
+                    <i class="ri-shuffle-line size"></i>
+                    <i class="ri-skip-back-fill" id="pre"></i>
+                    <i class="ri-play-circle-fill" id="playButton"></i>
+                    <i class="ri-skip-forward-fill" id="nxt" ></i>
+                    <i class="ri-repeat-fill size" id="repeat"></i>
+                </div>
+                <input type="range" id="progressbar" value="0" min="0" max="100">
+            </div>
+            <div id="playerrgt">
+                <i class="ri-volume-down-line" id="volume"></i>
+                <span id="volumeBar">100</span>
+                <input type="range" id="vol" value="100" min="0" max="100" onchange="rangeSlide(this
+                .value)" onmousemove="rangeSlide(this.value)">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
