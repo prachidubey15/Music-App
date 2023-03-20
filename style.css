@@ -323,7 +323,7 @@ body {
     text-align: center;
     float: right;
     opacity: .3;
-    font-size: .8rem;
+    font-size: .6rem;
     padding: 5px;
 }
 
@@ -574,7 +574,7 @@ body {
     }
 
     #footer {
-        padding: 6px;
+        /* padding: 6px; */
         height: 18vh;
         font-size: 0.6rem;
     }
